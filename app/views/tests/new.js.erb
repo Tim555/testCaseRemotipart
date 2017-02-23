@@ -1,6 +1,5 @@
 $('test').html(
   "<%=
       escape_javascript(
-          render(partial: 'form', object: @test)
+          render(partial: 'form', object: @test, as: :test)
       ) %>");
-)
